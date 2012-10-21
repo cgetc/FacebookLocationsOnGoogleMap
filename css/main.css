@@ -1,0 +1,34 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#gmap {
+	height: 100%;
+}
+
+body.not-login #main-page,
+body.logined #welcome-page {
+	display: none;
+}
+
+body.not-login #welcome-page,
+body.logined #main-page {
+	height: 100%;
+	display: block;
+}
+
+#query {
+	margin-top: 5px;
+	padding-left: 10px;
+	z-index: 1;
+	font-size: 100%;
+	border-radius: 15px;
+	border: 1px solid #333;
+}
+
+#indicator {
+	display: none;
+	margin-bottom: 20px;
+}

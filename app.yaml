@@ -1,0 +1,30 @@
+application: fb-on-gmap
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /img
+  static_dir: img
+
+- url: /index.html
+  upload: html/index.html
+  static_files: html/index.html
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.1"
