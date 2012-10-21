@@ -19,7 +19,7 @@ import webapp2
 
 from google.appengine.api import memcache
 
-API_KEY = "AIzaSyCUnjFIAGgQjwCCMIjIy1EPoNuIhmKz0e0"
+API_KEY = ""
 BASE_URL = "https://maps.googleapis.com/maps/api/place/search/json?key=%s&sensor=false" % API_KEY
 
 class GoolePlacesProxy(webapp2.RequestHandler):
