@@ -38,7 +38,7 @@ class GoolePlacesProxy(webapp2.RequestHandler):
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.redirect('/index.html')
+        self.redirect('/index.html')
 
 app = webapp2.WSGIApplication([
     ('/gplaces.*', GoolePlacesProxy),
